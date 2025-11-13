@@ -9,6 +9,8 @@ on:
 jobs:
   test:
     name: Testes em ${{ matrix.os }} - Python ${{ matrix.python-version }}
+    env:
+      PYTHONPATH: .
     strategy:
       fail-fast: false
       matrix:
