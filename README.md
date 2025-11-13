@@ -20,18 +20,6 @@ Este repositório demonstra como configurar um pequeno projeto em Python com tes
    pytest
    ```
 
-## Publicação no GitHub
-
-1. Crie um repositório novo no GitHub (público ou privado).
-2. Conecte este diretório local ao repositório remoto:
-   ```bash
-   git init
-   git remote add origin https://github.com/<seu-usuario>/<seu-repositorio>.git
-   git add .
-   git commit -m "Projeto inicial com testes e CI"
-   git push -u origin main
-   ```
-
 ## Workflow do GitHub Actions
 
 O arquivo `ci.yml` já está pronto para ser incluído no repositório. Ele é disparado a cada `push` ou `pull_request`, instalando as dependências e executando `pytest` em:
